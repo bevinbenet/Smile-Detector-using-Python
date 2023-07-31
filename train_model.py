@@ -78,7 +78,6 @@ print('[INFO] serializing network')
 model.save(args['model'])
 
 plt.style.use('ggplot')
-plt.figure()
 plt.plot(np.arange(0, 15), H.history['loss'], label='train_loss')
 plt.plot(np.arange(0, 15), H.history['val_loss'], label='val_loss')
 plt.plot(np.arange(0, 15), H.history['accuracy'], label='accuracy')
